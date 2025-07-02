@@ -406,23 +406,25 @@
                     </li>
                 </ul>
             </div>
-            <form class="bottom-subscribe-form">
-                <p class="footer-social-title">Subscribe</p>
-                <div class="bottom-subscribe">
-                    <label>
-                        <input type="email" name="email" placeholder="Email" class="bottom-subscribe-email" />
+    
+            <div class="subscribe-container">
+                <p class="subscribe-title">Subscribe</p>
+                <form class="subscribe-form" action="#" method="post" autocomplete="off" novalidate>
+                    <label class="subscribe-label" for="email-input">
+                        <input id="email-input" type="email" name="email" placeholder="E-mail" class="subscribe-input"
+                            required />
                     </label>
-                    <button type="submit" class="bottom-subscribe-submit">
+                    <button type="submit" class="subscribe-submit">
                         Subscribe
-                        <svg class="icon" width="24" height="24" aria-hidden="true">
+                        <svg class="subscribe-icon" width="24" height="24" aria-hidden="true">
                             <use href="./images/icons.svg#icon-send"></use>
                         </svg>
                     </button>
-                </div>
-            </form>
-              
+                </form>
+            </div>
         </div>
     </footer>
+      
    
     <div class="overlay is-hidden" data-modal>
         <div class="modal">
@@ -441,7 +443,7 @@
                     <div class="form-field">
                         <label class="form-label" for="user-name">Name</label>
                         <div class="input-wrapper">
-                            <input id="user-name" class="form-input" type="text" name="username" placeholder="Andrew Berger"
+                            <input id="user-name" class="form-input" type="text" name="user-name" placeholder="Andrew Berger"
                                 required />
                             <svg class="form-icon" width="12" height="12">
                                 <use href="./images/icons.svg#icon-person"></use>
@@ -452,7 +454,7 @@
                     <div class="form-field">
                         <label class="form-label" for="user-phone">Phone</label>
                         <div class="input-wrapper">
-                            <input id="user-phone" class="form-input" type="tel" name="phone"
+                            <input id="user-phone" class="form-input" type="tel" name="user-phone"
                                 placeholder="+38 (___) ___ __ __" required />
                             <svg class="form-icon" width="13" height="13">
                                 <use href="./images/icons.svg#icon-phone"></use>
@@ -463,7 +465,7 @@
                     <div class="form-field">
                         <label class="form-label" for="user-email">Email</label>
                         <div class="input-wrapper">
-                            <input id="user-email" class="form-input" type="email" name="email"
+                            <input id="user-email" class="form-input" type="email" name="user-email"
                                 placeholder="example@email.com" required />
                             <svg class="form-icon" width="15" height="12">
                                 <use href="./images/icons.svg#icon-email"></use>
@@ -473,7 +475,7 @@
     
                     <div class="form-field">
                         <label class="form-label" for="user-comment">Comment</label>
-                        <textarea id="user-comment" class="form-textarea" name="comment"
+                        <textarea id="user-comment" class="form-textarea" name="user-comment"
                             placeholder="Text input"></textarea>
                     </div>
                 </fieldset>
@@ -481,17 +483,26 @@
                 <fieldset class="form-fieldset">
                     <legend class="visually-hidden">Agreement</legend>
                 
-                    <label class="form-agreement">
-                        <input class="form-checkbox visually-hidden" type="checkbox" name="user-agreement" value="agree" required />
-                        <span class="form-checkbox-custom">
-                            <svg class="form-check-icon" width="10" height="8">
-                                <use href="./images/icons.svg#icon-checkbox"></use>
-                            </svg>
-                        </span>
-                        I accept the terms and conditions of the
-                        <a class="form-link" href="#">Privacy Policy</a>
-                    </label>
-                </fieldset>
+                    <div class="form-field">
+                        <input
+                          id="user-privacy"
+                          class="form-checkbox visually-hidden"
+                          type="checkbox"
+                          name="user-privacy"
+                          value="true"
+                          required
+                        />
+                        <label class="form-agreement" for="user-privacy">
+                            <span class="form-checkbox-custom">
+                                <svg class="form-check-icon" width="10" height="8">
+                                    <use href="./images/icons.svg#icon-checkbox"></use>
+                                </svg>
+                            </span>
+                            I accept the terms and conditions of the
+                            <a class="form-link" href="#">Privacy Policy</a>
+                        </label>
+                        </div>     
+                    </fieldset>
                   
     
                 <button class="form-submit" type="submit">Send</button>
