@@ -902,9 +902,7 @@ img {
 .checkbox-icon {
   fill: currentColor;}
 
-.checkbox-group {
-    margin-bottom: 24px;
-}
+
 .modal-agreement {
     display: flex;
     align-items: center;
