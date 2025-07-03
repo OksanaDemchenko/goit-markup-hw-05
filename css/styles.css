@@ -924,6 +924,15 @@ img {
     opacity: 0;
     pointer-events: none;
 }
+.modal-checkbox:checked + .checkbox-custom {
+    background-color: #4d5ae5;
+    border-color: #4d5ae5;
+  }
+  
+  .modal-checkbox:checked + .checkbox-custom svg path {
+    stroke: #ffffff;
+    fill: #ffffff;
+  }
 .modal-form-group.checkbox-group {
     margin-bottom: 24px;
   }
