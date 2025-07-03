@@ -1,7 +1,4 @@
-:root {
-    --brand-color: #404bbf;
-    --accent-color: #f4f4fd;
-  }
+
 /* Обнулення відступів */
 h1,
 h2,
@@ -802,16 +799,14 @@ img {
     border: none;
 }
 
-.modal-window 
-.modal-close-btn:hover 
-.modal-close-icon {
-    fill: var(--accent-color);
+.modal-window .modal-close-btn:hover .modal-close-icon {
+    fill: #ffffff;
 }
 
 
-.modal-close-btn:focus 
-.modal-close-icon {
-    fi fill: var(--accent-color);}
+.modal-close-btn:focus .modal-close-icon {
+    fill: #ffffff;
+}
 
 .modal-close-btn:focus {
     background-color: #404bbf;
@@ -909,7 +904,7 @@ img {
 
 
 .modal-agreement {
-    display: flex;
+    
     align-items: center;
     gap: 8px;
     width: 360px;
@@ -955,11 +950,11 @@ img {
 input.modal-checkbox:checked + label.modal-agreement > span.checkbox-custom {
     background-color: var(--brand-color, #404bbf);
     border: none;
-    fill: var(--accent-color);
+    fill: var(--accent-color, #f4f4fd);
 }
 
 input.modal-checkbox:checked + label.modal-agreement > span.checkbox-custom svg {
-    fill: var(--accent-color);
+    fill: var(--accent-color, #f4f4fd);
 }
 
 .checkbox-icon {
@@ -992,7 +987,7 @@ input.modal-checkbox:checked + label.modal-agreement > span.checkbox-custom svg 
 
 .modal-submit:hover,
 .modal-submit:focus {
-    background-color: var(--brand-color);
+    background-color: #404bbf;
     border: none;
 }
 
