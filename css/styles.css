@@ -1,7 +1,4 @@
-:root {
-    --brand-color: #404bbf;
-    --accent-color: #f4f4fd;
-  }
+
 /* Обнулення відступів */
 h1,
 h2,
@@ -797,20 +794,19 @@ img {
     height: 8px;
     fill: #2e2f42;
 }
-.modal-window .modal-close-btn:hover {
+.modal-close-btn:hover {
     background-color: #404bbf;
     border: none;
 }
 
-.modal-window .modal-close-btn:hover .modal-close-icon {
+.modal-close-btn:hover 
+.modal-close-icon {
     fill: #ffffff;
 }
-
-
-.modal-close-btn:focus .modal-close-icon {
+.modal-close-btn:focus 
+.modal-close-icon {
     fill: #ffffff;
 }
-
 .modal-close-btn:focus {
     background-color: #404bbf;
     border: none;
@@ -963,14 +959,10 @@ img {
     display: inline-flex;
   }
 
-input.modal-checkbox:checked + label.modal-agreement > span.checkbox-custom {
-    background-color: var(--brand-color);
+.modal-checkbox:checked + .modal-agreement > span.checkbox-custom {
+    background-color: #404BBF;
     border: none;
-    fill: var(--accent-color);
-}
-
-input.modal-checkbox:checked + label.modal-agreement > span.checkbox-custom svg {
-    fill: var(--accent-color);
+    fill: #F4F4FD;
 }
 
 .checkbox-icon {
