@@ -924,13 +924,17 @@ img {
     opacity: 0;
     pointer-events: none;
 }
-.modal-checkbox:checked + .checkbox-custom {
+.modal-agreement input.modal-checkbox:checked ~ .checkbox-custom {
     background-color: #4d5ae5;
     border-color: #4d5ae5;
+    fill: #ffffff; 
   }
   
-  .modal-checkbox:checked + .checkbox-custom svg path {
+.modal-agreement input.modal-checkbox:checked ~ .checkbox-custom svg path {
     stroke: #ffffff;
+    fill: #ffffff;
+}
+.modal-agreement input.modal-checkbox:checked ~ .checkbox-custom svg {
     fill: #ffffff;
   }
 .modal-form-group.checkbox-group {
