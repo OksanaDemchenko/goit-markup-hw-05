@@ -933,9 +933,18 @@ img {
     pointer-events: none;
 }
 
-.modal-checkbox:checked + .modal-agreement > span.checkbox-custom {
+.modal-checkbox:checked + .modal-agreement > .checkbox-custom {
     background-color: var(--brand-color);
     border: none;
+    fill: var(--checkbox-fill);
+  }
+  
+.modal-checkbox:checked + .modal-agreement > .checkbox-custom svg {
+    fill: var(--checkbox-fill);
+  }
+  
+.modal-checkbox:checked + .modal-agreement > .checkbox-custom svg path {
+    stroke: var(--checkbox-fill);
     fill: var(--checkbox-fill);
   }
 
