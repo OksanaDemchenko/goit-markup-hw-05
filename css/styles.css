@@ -761,6 +761,7 @@ img {
     min-height: 584px;
     top: 50%;
     left: 50%;
+    transform: translate(-50%, -50%);
     padding: 72px 24px 24px;
     background-color: #fcfcfc;
     border-radius: 4px;
